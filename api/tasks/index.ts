@@ -1,8 +1,8 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { isAuthenticated } from '../_lib/auth'
-import { methodNotAllowed, readJsonBody, sendError, sendJson } from '../_lib/http'
-import { createTask, deleteCompletedTasks, listTasks } from '../_lib/tasks'
-import { parseTaskInput } from '../../shared/eisenflow'
+import { isAuthenticated } from '../_lib/auth.js'
+import { methodNotAllowed, readJsonBody, sendError, sendJson } from '../_lib/http.js'
+import { createTask, deleteCompletedTasks, listTasks } from '../_lib/tasks.js'
+import { parseTaskInput } from '../../shared/eisenflow.js'
 
 function readStatusQuery(req: VercelRequest): string | null {
   const rawStatus = req.query.status

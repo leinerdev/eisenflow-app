@@ -1,8 +1,8 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { isAuthenticated } from '../_lib/auth'
-import { methodNotAllowed, readJsonBody, sendError, sendJson } from '../_lib/http'
-import { reorderTasks } from '../_lib/tasks'
-import { parseTaskReorderItems } from '../../shared/eisenflow'
+import { isAuthenticated } from '../_lib/auth.js'
+import { methodNotAllowed, readJsonBody, sendError, sendJson } from '../_lib/http.js'
+import { reorderTasks } from '../_lib/tasks.js'
+import { parseTaskReorderItems } from '../../shared/eisenflow.js'
 
 type ReorderBody = {
   items?: unknown

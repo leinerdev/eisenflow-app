@@ -1,5 +1,5 @@
 import { MongoClient, ServerApiVersion, type Db } from 'mongodb'
-import { getEnv } from './env'
+import { getEnv } from './env.js'
 
 declare global {
   var __eisenflowMongoClientPromise: Promise<MongoClient> | undefined

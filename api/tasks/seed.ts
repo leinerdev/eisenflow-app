@@ -1,7 +1,7 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { isAuthenticated } from '../_lib/auth'
-import { methodNotAllowed, sendError, sendJson } from '../_lib/http'
-import { seedStarterTasks } from '../_lib/tasks'
+import { isAuthenticated } from '../_lib/auth.js'
+import { methodNotAllowed, sendError, sendJson } from '../_lib/http.js'
+import { seedStarterTasks } from '../_lib/tasks.js'
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (!isAuthenticated(req)) {

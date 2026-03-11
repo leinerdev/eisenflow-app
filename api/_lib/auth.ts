@@ -1,6 +1,6 @@
 import type { VercelRequest } from '@vercel/node'
 import { createHash, createHmac, timingSafeEqual } from 'node:crypto'
-import { getEnv } from './env'
+import { getEnv } from './env.js'
 
 const SESSION_COOKIE = 'eisenflow_session'
 const SESSION_DURATION_SECONDS = 60 * 60 * 24 * 30

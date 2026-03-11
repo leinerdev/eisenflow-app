@@ -1,6 +1,6 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { createSessionCookie, isPasswordValid } from '../_lib/auth'
-import { methodNotAllowed, readJsonBody, sendError, sendJson } from '../_lib/http'
+import { createSessionCookie, isPasswordValid } from '../_lib/auth.js'
+import { methodNotAllowed, readJsonBody, sendError, sendJson } from '../_lib/http.js'
 
 type LoginBody = {
   password?: string

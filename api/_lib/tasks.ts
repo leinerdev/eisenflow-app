@@ -7,8 +7,8 @@ import {
   type TaskInput,
   type TaskPatch,
   type TaskReorderItem,
-} from '../../shared/eisenflow'
-import { getDatabase } from './mongodb'
+} from '../../shared/eisenflow.js'
+import { getDatabase } from './mongodb.js'
 
 type TaskDocument = Task & {
   _id: string
