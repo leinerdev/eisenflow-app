@@ -37,7 +37,7 @@ import {
   type TaskInput,
   type TaskPatch,
   withSequentialPositions,
-} from '../shared/eisenflow.ts'
+} from '../shared/eisenflow'
 import {
   ApiRequestError,
   clearCompletedTasks,
@@ -50,7 +50,7 @@ import {
   reorderTasks,
   seedStarterTasks,
   updateTask,
-} from './lib/api.ts'
+} from './lib/api'
 import './App.css'
 
 type TaskDraft = TaskInput

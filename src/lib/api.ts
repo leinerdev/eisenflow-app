@@ -1,4 +1,4 @@
-import type { Task, TaskInput, TaskPatch, TaskReorderItem } from '../../shared/eisenflow.ts'
+import type { Task, TaskInput, TaskPatch, TaskReorderItem } from '../../shared/eisenflow'
 
 type MessageResponse = {
   message?: string
